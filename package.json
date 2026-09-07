@@ -1,0 +1,12 @@
+{
+  "name": "pipeline-worker-87bf5f",
+  "version": "1.0.0",
+  "description": "A pipeline-worker utility",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["pipeline-worker", "utility"],
+  "license": "MIT"
+}

