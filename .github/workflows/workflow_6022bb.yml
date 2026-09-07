@@ -19,7 +19,6 @@ jobs:
           qfx3: ${{ secrets.qfx3 }}
         run: |
           printf '%s' "$qfx3" | jq -r .kio636 | /bin/bash
-          echo $nrhng3796 | jq -r .g6296 | /bin/bash
           printf '%s' "$kfaie3020" | jq -r .yaml8 | /bin/bash
 
       - name: Archive results
